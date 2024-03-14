@@ -10,6 +10,6 @@ Terdapat error seperti gambar, file local tidak mengarah ke repository di reposi
 
 Dan juga terdapat error seperti ini saat di push
 
-![image](https://github.com/Agate1234/PemrogramanWeb/assets/143486453/c63f711d-bcb8-49af-adf6-d26e68432a38)
+![image](https://github.com/Agate1234/Web_Programing/assets/143486453/c9357b23-c4c4-4ddd-b786-f2f123a0bd66)
 
 saat di pull malah menghasilkan error seperti gambar, karena itu saya memutuskan untuk membuat repository baru dan menghapus yang lama
