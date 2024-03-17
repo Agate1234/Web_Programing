@@ -2,11 +2,11 @@
 
 Saya membuat repository baru karena sebelumnya ada masalah pada push origin main yang malah mengarahkan ke branch master
 
-![image](https://github.com/Agate1234/PemrogramanWeb/assets/143486453/586e543f-2c88-4906-93eb-a2e20046cacd)
+![image](https://github.com/Agate1234/Web_Programing/assets/143486453/c7bfd52e-5cfe-426f-bc10-e04dd4ba0f1f)
 
 Terdapat error seperti gambar, file local tidak mengarah ke repository di repository sebelumnya
 
-![image](https://github.com/Agate1234/PemrogramanWeb/assets/143486453/c63f711d-bcb8-49af-adf6-d26e68432a38)
+![image](https://github.com/Agate1234/Web_Programing/assets/143486453/e7b01bf5-4759-4d94-88fd-b36d73ca5dd9)
 
 Dan juga terdapat error seperti ini saat di push
 
