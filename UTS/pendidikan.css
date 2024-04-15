@@ -1,0 +1,131 @@
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+html{
+    background: black;
+}
+
+.pendidikan{
+    position: relative;
+    display: grid;
+    width: 500px;
+    margin: 50px auto;
+    background-color: #dfdcdc;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+.bg{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: url('img/pendidikan.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: fade 0.75s ease-in;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.65;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    25% { 
+        opacity: 0.25; 
+    } 
+    50% { 
+        opacity: 0.5; 
+    } 
+    75% { 
+        opacity: 0.75; 
+    } 
+    100% { 
+        opacity: 1; 
+    }
+}
+
+table{
+    width: 100%;
+    margin-bottom: 5px;
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid #000000;
+    border-radius: 2em;
+}
+
+table th, table td{
+    padding: 0px;
+    text-align: center;
+}
+
+.next{
+    float: right;
+}
+
+button{
+    position: relative;
+    padding: 1px 20px;
+    background-color: #5ec3e8;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 100px;
+    cursor: pointer;
+    line-height: 2;
+}
+
+button span{
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    transition: 0.75s;
+}
+
+button.next span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.75s;
+}
+
+button.next:hover span{
+    padding-right: 20px;
+}
+
+button.next:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+button.prev span:after{
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -10px;
+    transition: 0.75s;
+}
+
+button.prev:hover span{
+    padding-left: 10px;
+}
+
+button.prev:hover span:after{
+    opacity: 1;
+    left: -5px;
+}

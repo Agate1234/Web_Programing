@@ -1,0 +1,102 @@
+label {
+    display: inline-block;
+    width: 125px;
+}
+
+html{
+    background: black;
+}
+
+label.prov{
+    display: inline-block;
+    width: 15px;
+}
+
+.biodata{
+    position: relative;
+    display: grid;
+    width: 500px;
+    margin: 50px auto;
+    background-color: #dfdcdc;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+.bg{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: url('img/biodata.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: fade 0.75s ease-in;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.65;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    25% { 
+        opacity: 0.25; 
+    } 
+    50% { 
+        opacity: 0.5; 
+    } 
+    75% { 
+        opacity: 0.75; 
+    } 
+    100% { 
+        opacity: 1; 
+    }
+}
+
+.tombol{
+    padding-left: 350px;
+}
+
+button{
+    position: relative;
+    padding: 1px 20px;
+    background-color: #5ec3e8;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 100px;
+    cursor: pointer;
+    line-height: 2;
+}
+
+button span{
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    transition: 0.75s;
+}
+
+button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.75s;
+}
+
+button:hover span{
+    padding-right: 20px;
+}
+
+button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
