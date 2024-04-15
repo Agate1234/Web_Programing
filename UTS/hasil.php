@@ -26,19 +26,19 @@ session_start();
                 $('form').fadeOut(750);
                 $('.hasil').fadeOut(750);
                 $('.bg').fadeOut(1500);
-                setTimeout(function(){            
+                setTimeout(function(){
                 }, 1500);
             });
 
             $('.prev').click(function(e){
-                    e.preventDefault();
-                    $('form').fadeOut(750);
-                    $('.pendidikan').fadeOut(750);
-                    $('.bg').fadeOut(1500);
-                    setTimeout(function(){
-                        history.back();
-                    }, 1500);
-                });
+                e.preventDefault();
+                $('form').fadeOut(750);
+                $('.lampiran').fadeOut(750);
+                $('.bg').fadeOut(1500);
+                setTimeout(function(){
+                    history.back();
+                }, 1500);
+            });
         });
     </script>
 </head>
@@ -48,7 +48,7 @@ session_start();
             <div id="bio">
                 <h3>Biodata</h3>
             </div>
-            <div id="form_bio"> 
+            <div id="form_bio">
                 <table>
                     <tr>
                         <td colspan="3"><img src="<?php echo $_SESSION["file"][0] ?>"></td>
@@ -82,7 +82,7 @@ session_start();
                         <td id="col1">Agama</td>
                         <td>:</td>
                         <td><?php echo $_SESSION["agama"]; ?></td>
-                        
+
                     </tr>
                     <tr>
                         <td id="col1">No HP</td>

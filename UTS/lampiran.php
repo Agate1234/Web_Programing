@@ -25,10 +25,8 @@ session_start();
                         contentType: false,
                         processData: false,
                         success: function (response){
-                            $("#hasil").html(response);
                         },
                         error: function(){
-                            ("#hasil").html('Terjadi Kesalahan saat mengunggah file')
                         }
                     });
                     $('form').fadeOut(750);
@@ -42,7 +40,7 @@ session_start();
                 $('.prev').click(function(e){
                     e.preventDefault();
                     $('form').fadeOut(750);
-                    $('.pendidikan').fadeOut(750);
+                    $('.lampiran').fadeOut(750);
                     $('.bg').fadeOut(1500);
                     setTimeout(function(){
                         history.back();
