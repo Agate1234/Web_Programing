@@ -1,6 +1,6 @@
 label {
     display: inline-block;
-    width: 500px;
+    width: 250px;
 }
 
 html{
@@ -55,4 +55,66 @@ body{
     100% { 
         opacity: 1; 
     }
+}
+
+.next{
+    float: right;
+}
+
+button{
+    position: relative;
+    padding: 1px 20px;
+    background-color: #5ec3e8;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 100px;
+    cursor: pointer;
+    line-height: 2;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+button span{
+    cursor: pointer;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+    transition: 0.75s;
+}
+
+button.next span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.75s;
+}
+
+button.next:hover span{
+    padding-right: 20px;
+}
+
+button.next:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+button.prev span:after{
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -10px;
+    transition: 0.75s;
+}
+
+button.prev:hover span{
+    padding-left: 10px;
+}
+
+button.prev:hover span:after{
+    opacity: 1;
+    left: -5px;
 }

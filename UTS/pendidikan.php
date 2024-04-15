@@ -74,62 +74,6 @@ session_start();
                 <label for="prostud"><b>Program Studi: </b></label>
                 <input type="text" name="prostud" id="prostud" size="30" required><br><br>
 
-                <label for="org"><b>Pengalaman Organisasi: </b></label><br>
-                <table>
-                    <tr>
-                        <th>Nama Organisasi</th>
-                        <th>Jabatan</th>
-                        <th>Masa Jabatan</th>
-                        <th>Tahun</th>
-                    </tr>
-                    <tr>
-                        <td><input type="text" nama="nama1" size="15"></td>
-                        <td><input type="text" nama="jabatan1" size="10"></td>
-                        <td><input type="text" nama="masa1" size="10"></td>
-                        <td><input type="text" nama="tahun1" size="8"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" nama="nama2" size="15"></td>
-                        <td><input type="text" nama="jabatan2" size="10"></td>
-                        <td><input type="text" nama="masa2" size="10"></td>
-                        <td><input type="text" nama="tahun2" size="8"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" nama="nama3" size="15"></td>
-                        <td><input type="text" nama="jabatan3" size="10"></td>
-                        <td><input type="text" nama="masa3" size="10"></td>
-                        <td><input type="text" nama="tahun3" size="8"></td>
-                    </tr>
-                </table><br>
-
-                <label for="kerja"><b>Pengalaman Kerja: </b></label><br>
-                <table>
-                    <tr>
-                        <th>Nama Perusahaan</th>
-                        <th>Jabatan</th>
-                        <th>Masa Kerja</th>
-                        <th>Tahun</th>
-                    </tr>
-                    <tr>
-                        <td><input type="text" nama="nama4" size="15"></td>
-                        <td><input type="text" nama="jabatan4" size="10"></td>
-                        <td><input type="text" nama="masa4" size="10"></td>
-                        <td><input type="text" nama="tahun4" size="8"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" nama="nama5" size="15"></td>
-                        <td><input type="text" nama="jabatan5" size="10"></td>
-                        <td><input type="text" nama="masa5" size="10"></td>
-                        <td><input type="text" nama="tahun5" size="8"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" nama="nama6" size="15"></td>
-                        <td><input type="text" nama="jabatan6" size="10"></td>
-                        <td><input type="text" nama="masa6" size="10"></td>
-                        <td><input type="text" nama="tahun6" size="8"></td>
-                    </tr>
-                </table><br><br>
-
                 <button type="button" name="prev" class="prev"><span>Previous</span></button>
                 <button type="submit" name="submit" class="next" formmethod="post"><span>Next</span></button>
             </form>

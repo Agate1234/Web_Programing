@@ -54,22 +54,6 @@ body{
     }
 }
 
-table{
-    width: 100%;
-    margin-bottom: 5px;
-    border-collapse: collapse;
-}
-
-table, th, td{
-    border: 1px solid #000000;
-    border-radius: 2em;
-}
-
-table th, table td{
-    padding: 0px;
-    text-align: center;
-}
-
 .next{
     float: right;
 }
@@ -84,6 +68,8 @@ button{
     width: 100px;
     cursor: pointer;
     line-height: 2;
+    border: solid 1px;
+    border-radius: 5px;
 }
 
 button span{

@@ -21,14 +21,24 @@ session_start();
                 $("#efek1").slideToggle("slow");
             });
 
-            $('form').submit(function(e){
+            $('.end').click(function(e){
                 e.preventDefault();
                 $('form').fadeOut(750);
-                $('.pendidikan').fadeOut(750);
+                $('.hasil').fadeOut(750);
                 $('.bg').fadeOut(1500);
                 setTimeout(function(){            
                 }, 1500);
             });
+
+            $('.prev').click(function(e){
+                    e.preventDefault();
+                    $('form').fadeOut(750);
+                    $('.pendidikan').fadeOut(750);
+                    $('.bg').fadeOut(1500);
+                    setTimeout(function(){
+                        history.back();
+                    }, 1500);
+                });
         });
     </script>
 </head>
@@ -122,22 +132,30 @@ session_start();
                     <tr>
                         <td id="kol1">Ijazah</td>
                         <td>:</td>
-                        <td><a href="<?php echo $_SESSION["file"][1] ?>" target="_blank">Ijazah</a></td>
+                        <td>
+                            <a href="<?php echo $_SESSION["file"][1] ?>" target="_blank" ><button id="tombol">Ijazah</button></a>
+                        </td>
                     </tr>
                     <tr>
                         <td id="kol1">Transkrip Nilai</td>
                         <td>:</td>
-                        <td><a href="<?php echo $_SESSION["file"][2] ?>" target="_blank">Transkrip Nilai</a></td>
+                        <td>
+                            <a href="<?php echo $_SESSION["file"][2] ?>" target="_blank" ><button id="tombol">Transkrip Nilai</button></a>
+                        </td>
                     </tr>
                     <tr>
                         <td id="kol1">Surat Pengalaman Kerja (Optional)</td>
                         <td>:</td>
-                        <td><a href="<?php echo $_SESSION["file1"][0] ?>" target="_blank">Surat Pengalaman</a></td>
+                        <td>
+                            <a href="<?php echo $_SESSION["file1"][0] ?>" target="_blank"><button  id="tombol">Surat Pengalaman</button></a>
+                        </td>
                     </tr>
                     <tr>
                         <td id="kol1">Sertifikat (Optional)</td>
                         <td>:</td>
-                        <td><a href="<?php echo $_SESSION["file1"][1] ?>" target="_blank">Sertifikat</a></td>
+                        <td>
+                            <a href="<?php echo $_SESSION["file1"][1] ?>" target="_blank"><button id="tombol">Sertifikat</button></a>
+                        </td>
                     </tr>
                 </table>
             </div>

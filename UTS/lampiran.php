@@ -6,7 +6,7 @@ session_start();
 <html>
     <head>
         <title>Lampiran</title>
-        <link rel="stylesheet" href="lampiran.css">
+        <link rel="stylesheet" type="text/css" href="lampiran.css">
         <script src="jquery-3.7.1.js"></script>
         <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
         <script>
@@ -38,11 +38,21 @@ session_start();
                         location.href = "server_lampiran.php";
                     }, 1500);
                 });
+
+                $('.prev').click(function(e){
+                    e.preventDefault();
+                    $('form').fadeOut(750);
+                    $('.pendidikan').fadeOut(750);
+                    $('.bg').fadeOut(1500);
+                    setTimeout(function(){
+                        history.back();
+                    }, 1500);
+                });
             });
         </script>
     </head>
     <body>
-        <div class="bg" id="bg"></div>
+        <div class="bg"></div>
         <div class="lampiran"  style="display: none;">
             <form method="post" enctype="multipart/form-data" action="server_lapmpiran.php">
                 <h2 align="center">Lampiran</h2>
@@ -64,7 +74,7 @@ session_start();
                 <input type="file" name="file1[]" id="file1"><br><br>
 
                 <button type="button" name="prev" class="prev"><span>Previous</span></button>
-                <button type="submit" name="submit" class="submit"><span>Submit</span></button>
+                <button type="submit" name="submit" class="next"><span>Submit</span></button>
             </form>
         </div>
     </body>

@@ -28,6 +28,7 @@ img{
     width: 354px;
     height: 472px;
     margin-left: 200px;
+    padding-top: 20px;
     padding-bottom: 15px;
 }
 
@@ -113,14 +114,23 @@ img{
 
 button{
     position: relative;
-    padding-top: 15px;
+    margin-top: 20px;
+    padding: 1px 20px;
     background-color: #5ec3e8;
     border: none;
     outline: none;
     border-radius: 2px;
-    width: 100px;
+    height: 50px;
+    width: 150px;
     cursor: pointer;
     line-height: 2;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+#tombol{
+    height: auto;
+    width: auto;
 }
 
 button span{
