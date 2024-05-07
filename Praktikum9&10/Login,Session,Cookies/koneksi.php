@@ -1,9 +1,14 @@
 <?php
-// Koneksi ke database
-$connect = mysqli_connect("localhost", "root", "", "prakwebdb");
 
-// Periksa koneksi
-if(mysqli_connect_errno()) {
-    die("Koneksi database gagal: " . mysqli_connect_error());
+$namaHost = "localhost";
+$username = "root"; 
+$password = "";
+$database = "prakwebdb"; 
+
+try {
+    $connect = mysqli_connect($namaHost, $username, $password, $database); 
+} catch (Exception $e) {
+    echo $e->getMessage();
 }
+
 ?>
